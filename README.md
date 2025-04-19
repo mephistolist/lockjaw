@@ -33,7 +33,7 @@ OPTIONS:
 You can run it like this:
 
 ```
-$ lockjaw -u http://localhost --spoof 127.0.0.1 --database mine.db -a "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+$ lockjaw -u http://localhost -x 127.0.0.1 -d mine.db -a "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 ```
 Besides the console output, this will be written to an sqlite3 database. You can view everything was found in the database specified with the following:
 
