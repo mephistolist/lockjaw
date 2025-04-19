@@ -1,16 +1,11 @@
 #!/bin/sh
-# Check if rustc is installed
-if ! command -v rustc &> /dev/null; then
-    echo "Error: rustc is not installed. Please install Rust."
-    exit 1
-fi
 # Check if cargo is installed
-if ! command -v cargo &> /dev/null; then
-    echo "Error: cargo is not installed. Please install Rust."
+if ! command -v cargo > /dev/null; then
+    echo "Error: cargo is not installed. Please install Rust and Cargo."
     exit 1
 fi
 # Check if sqlite3 is installed
-if ! command -v sqlite3 &> /dev/null; then
+if ! command -v sqlite3 > /dev/null; then
     echo "Error: sqlite3 is not installed. Please install SQLite."
     exit 1
 fi
