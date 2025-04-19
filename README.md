@@ -5,11 +5,14 @@ Its easy for most people to use a VPN or tor and hide their ip address. This cod
 
 You can build this with:
 
-```sudo make install```
+```
+sudo make install
+```
 
 Usage can be found with -h or --help:
 
-```$ lockjaw -h             
+```
+$ lockjaw -h             
 Lockjaw Spider 2.0
 By Mephistolist
 Web spider in Rust that helps to hide tracks.
@@ -29,20 +32,27 @@ OPTIONS:
 ```
 You can run it like this:
 
+```
 $ lockjaw -u http://localhost --spoof 127.0.0.1 --database mine.db -a "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+```
 Besides the console output, this will be written to an sqlite3 database. You can view everything was found in the database specified with the following:
 
-```$ sqlite3 mine.db                                                                   
+```
+$ sqlite3 mine.db                                                                   
 SQLite version 3.44.2 2023-11-24 11:41:44
 Enter ".help" for usage hints.
 sqlite> SELECT * FROM links;
 ```
 You can refine the search for only urls with 200 response codes, or any response code, like this:
 
-```select url from links where status_code = '200';```
+```
+select url from links where status_code = '200';
+```
 
 Or just display links where form tags were found on the page like this:
 
-```select url from links where has_form = 'y';```
+```
+select url from links where has_form = 'y';
+```
 
 The laws on spoofing and spidering web forms may vary greatly country to country. If you are unsure, please refrain until you are familar with local laws.
