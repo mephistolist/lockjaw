@@ -58,3 +58,5 @@ select url from links where has_form = 'y';
 From here a pen tester may inspect these urls with these forms to craft XSS or SQL injections. 
 
 The laws on spoofing, spidering web forms or pen testing may vary greatly country to country. If you are unsure, please refrain until you are familar with local laws.
+
+This sofware has been tested and confirmed to work with Fedora, Debian and FreeBSD. 
