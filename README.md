@@ -55,4 +55,6 @@ Or just display links where form tags were found on the page like this:
 select url from links where has_form = 'y';
 ```
 
-The laws on spoofing and spidering web forms may vary greatly country to country. If you are unsure, please refrain until you are familar with local laws.
+From here a pen tester may inspect these urls with these forms to craft XSS or SQL injections. 
+
+The laws on spoofing, spidering web forms or pen testing may vary greatly country to country. If you are unsure, please refrain until you are familar with local laws.
